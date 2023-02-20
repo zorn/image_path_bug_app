@@ -18,7 +18,7 @@ defmodule ImagePathBugAppWeb.Router do
     pipe_through :browser
 
     live "/", HomeLive, :home
-    live "/demo/:slug", DemoLive, :show
+    live "/demo/*slug", DemoLive, :show
   end
 
   # Other scopes may use custom stacks.
